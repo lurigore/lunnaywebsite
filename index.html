@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lowna :D</title>
+        <style>
+            @font-face {
+                font-family: fontelowna;
+                src: url(wendylatino.ttf);
+            }
+            @font-face {
+                font-family: fontelowna2;
+                src: url(lunnaymf2tiny.ttf);
+            }
+
+            html{
+                user-select: none;
+            }
+        </style>
+        
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body style="height:200vh;   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #033838;">
+
+        
+    <script defer src="script.js"></script>
+
+        <div class="page-atras">
+
+                <section id="header">
+                    <div class="header-background">
+                        <div class="logo">
+                            <div class="efeitin">Lunnay Portfolio</div>
+                            Lunnay Portfolio
+                            <div class="underline-logo">-----------------</div>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">Home
+                                <div class="underline-logo2"></div></a>
+                            </li>
+                            <li>
+                                <a href="#tabela">Pricing
+                                <div class="underline-logo2"></div></a>
+                            </li>
+                            <li>
+                                <a href="#">About
+                                <div class="underline-logo2"></div></a>
+                            </li>
+                            <li>
+                                <a href="#">Socials
+                                <div class="underline-logo2"></div></a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <div class="accpt-video" id="accpt-video">
+                
+                    <div style="margin-bottom: 5px;">
+                        Aceita a reprodução automática de vídeos e áudios?
+                    </div>
+                    <button onclick="playVideo()">Aceitar</button>
+                    <button onclick="declineVideo()">Declinar</button>
+                </div>
+
+                <section id="tabela">
+                    <div class="tabela">
+                    
+                    
+                        <div class="preço-display">
+                            <div class="total">
+                                Total
+                            </div>
+                            <div class="simbolo">
+                                R$
+                            </div>
+                            <div class="preçoTotal" id="totalValue">
+                                000
+                            </div>
+                            <div class="valorEstimado">
+                                Valor Estimado
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="windows-bar">
+                        </div>
+                        <div class="windows-details">
+                            submit >
+                        </div>
+                        
+                        <div class="escolha">
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn">Character Illustration-</a>
+                                <a href="javascript:fodase()"><div class="dropdown-content">
+                                    3D Art -
+                                </div> </a>
+                            </div>
+                        </div>
+                        
+                        <div class="input">
+                            <div class="type">
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="checkmark" value="100" id="busto" onclick="updateValues(this)">
+                                        busto
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="checkmark" value="150" id="meio-corpo" onclick="updateValues(this)">
+                                        meio corpo
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="checkmark" value="250" id="corpo-inteiro" onclick="updateValues(this)">
+                                        corpo inteiro
+                                    </label>
+                                </div>
+                            </div>
+            
+            
+            <div class="render">
+                <div class="primeirinha">
+                    <div>
+                                        <label>
+                                            <input type="checkbox" name="checkmark2" value="50" onclick="updateValues2(this)">
+                                            apenas tracejado
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="checkmark2" value="100" onclick="updateValues2(this)">
+                                            render basico
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="checkmark2" value="150" onclick="updateValues2(this)">
+                                            render normal
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="checkmark2" value="250" onclick="updateValues2(this)">
+                                            caprichado
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="segundinha">
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="checkmark3" value="50" 
+                                            id="cenario-check" onclick="updateValues3(this)">
+                                            cenario simples
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="checkbox" name="checkmark3" value="-50"
+                                            id="b&w-check" onclick="updateValues3(this)">
+                                            preto e branco
+                                        </label>
+                                    </div>
+                                </div>
+            
+                            </div>
+            
+                            <div class="display">
+                                <img src="display-options/cenario-simples.png"
+                                style="width: 100%; position: absolute; display:none" id="background-display">
+                                <img src="display-options/busto/apenas-tracejado.png" class="display-image" id="display-image" draggable="false">
+                            </div>
+                            
+                            <div class="chatbox">
+                                hola munano.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        </div>
+        
+        <video class="video-background" id="video-background" src="background.mp4" loop="true"></video>
+        
+    </body>
+    </html>
